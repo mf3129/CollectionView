@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		F4F93DC02280C5B1005EF7DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F93DBF2280C5B1005EF7DD /* AppDelegate.swift */; };
-		F4F93DC22280C5B1005EF7DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F93DC12280C5B1005EF7DD /* ViewController.swift */; };
 		F4F93DC52280C5B1005EF7DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4F93DC32280C5B1005EF7DD /* Main.storyboard */; };
 		F4F93DC72280C5B7005EF7DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4F93DC62280C5B7005EF7DD /* Assets.xcassets */; };
 		F4F93DCA2280C5B7005EF7DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4F93DC82280C5B7005EF7DD /* LaunchScreen.storyboard */; };
 		F4F93DD52280C5B7005EF7DD /* CollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F93DD42280C5B7005EF7DD /* CollectionViewTests.swift */; };
 		F4F93DE02280C5B7005EF7DD /* CollectionViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F93DDF2280C5B7005EF7DD /* CollectionViewUITests.swift */; };
+		F4F93DEE2280CFEF005EF7DD /* IconCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F93DED2280CFEF005EF7DD /* IconCollectionViewCell.swift */; };
+		F4F93DF22280D0E9005EF7DD /* IconCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F93DF12280D0E9005EF7DD /* IconCollectionViewController.swift */; };
+		F4F93DF52280DB4F005EF7DD /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F93DF42280DB4F005EF7DD /* Icon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		F4F93DBC2280C5B1005EF7DD /* CollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4F93DBF2280C5B1005EF7DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F4F93DC12280C5B1005EF7DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F4F93DC42280C5B1005EF7DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4F93DC62280C5B7005EF7DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4F93DC92280C5B7005EF7DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		F4F93DDB2280C5B7005EF7DD /* CollectionViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectionViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4F93DDF2280C5B7005EF7DD /* CollectionViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewUITests.swift; sourceTree = "<group>"; };
 		F4F93DE12280C5B7005EF7DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4F93DED2280CFEF005EF7DD /* IconCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconCollectionViewCell.swift; sourceTree = "<group>"; };
+		F4F93DF12280D0E9005EF7DD /* IconCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconCollectionViewController.swift; sourceTree = "<group>"; };
+		F4F93DF42280DB4F005EF7DD /* Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +82,11 @@
 			isa = PBXGroup;
 			children = (
 				F4F93DBE2280C5B1005EF7DD /* CollectionView */,
-				F4F93DD32280C5B7005EF7DD /* CollectionViewTests */,
+				F4F93DF32280DB26005EF7DD /* Model */,
 				F4F93DDE2280C5B7005EF7DD /* CollectionViewUITests */,
+				F4F93DD32280C5B7005EF7DD /* CollectionViewTests */,
+				F4F93DF02280D07E005EF7DD /* Controller */,
+				F4F93DEF2280CFFE005EF7DD /* View */,
 				F4F93DBD2280C5B1005EF7DD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,7 +105,6 @@
 			isa = PBXGroup;
 			children = (
 				F4F93DBF2280C5B1005EF7DD /* AppDelegate.swift */,
-				F4F93DC12280C5B1005EF7DD /* ViewController.swift */,
 				F4F93DC32280C5B1005EF7DD /* Main.storyboard */,
 				F4F93DC62280C5B7005EF7DD /* Assets.xcassets */,
 				F4F93DC82280C5B7005EF7DD /* LaunchScreen.storyboard */,
@@ -123,6 +129,30 @@
 				F4F93DE12280C5B7005EF7DD /* Info.plist */,
 			);
 			path = CollectionViewUITests;
+			sourceTree = "<group>";
+		};
+		F4F93DEF2280CFFE005EF7DD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F4F93DED2280CFEF005EF7DD /* IconCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F4F93DF02280D07E005EF7DD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F4F93DF12280D0E9005EF7DD /* IconCollectionViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F4F93DF32280DB26005EF7DD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F4F93DF42280DB4F005EF7DD /* Icon.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +286,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4F93DC22280C5B1005EF7DD /* ViewController.swift in Sources */,
 				F4F93DC02280C5B1005EF7DD /* AppDelegate.swift in Sources */,
+				F4F93DF22280D0E9005EF7DD /* IconCollectionViewController.swift in Sources */,
+				F4F93DF52280DB4F005EF7DD /* Icon.swift in Sources */,
+				F4F93DEE2280CFEF005EF7DD /* IconCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
